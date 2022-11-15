@@ -158,18 +158,18 @@ void Selection(int[] array)
 
     for (int i = 0; i < array.Length - 1; i++)
     {
-        int minPosition = i;
+        int minPosition1 = i;
 
         for (int j = i + 1; j < array.Length; j++)
         {
-            if (array[j] < array[minPosition]) minPosition = j;
+            if (array[j] < array[minPosition1]) minPosition1 = j;
         }
         {
 
 
             int temporary = array[i];
-            array[i] = array[minPosition];
-            array[minPosition] = temporary;
+            array[i] = array[minPosition1];
+            array[minPosition1] = temporary;
 
 
 
